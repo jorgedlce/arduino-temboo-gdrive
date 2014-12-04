@@ -89,7 +89,7 @@ void loop() {
     cm = pow(3027.4 / lectura, 1.2134); // conversión a centímetros
     
     
-    String RowDataValue = (String)tempC+"c"+","+(String)Hu+","+(String)cm+"cm";
+    String RowDataValue = (String)(int)tempC+","+(String)Hu+","+(String)cm+"cm";
     
     AppendRowChoreo.addInput("RowData", RowDataValue);
     String SpreadsheetTitleValue = "Arduino1";
